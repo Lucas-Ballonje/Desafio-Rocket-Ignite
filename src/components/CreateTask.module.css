@@ -1,0 +1,29 @@
+.createTask{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -2rem;
+}
+
+.createTask form {
+    display: flex;
+    max-width: 736px;
+    width: 100%;
+    gap: 15px;
+}
+
+.createTask input {
+    width: 634px;
+    height: auto;
+    border-radius: 8px;
+    padding: 12px;
+    background: var(--gray-500);
+    color: var(--white);
+    border: none;
+    outline: none;
+}
+
+.btnCreate {
+    width: 90px;
+    height: 52px;
+}

@@ -15,10 +15,10 @@
     --danger: #E25858;
 }
 
-:focus{
+/* :focus{
     outline: transparent;
     box-shadow: 0 0 0 2px var(--purple-dark);  
-}
+} */
 
 *{
     margin: 0;
@@ -27,8 +27,10 @@
 }
 
 body{
-    background-color: var(--gray-500);
-}
+    background-color: var(--gray-600);
+    color: var(--grey-300);
+    --webkit-font-smoothing: antialiased;
+}   
 
 body, input, textarea, button {
     font-family: "Inter", sans-serif;

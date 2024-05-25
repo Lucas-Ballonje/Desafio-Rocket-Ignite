@@ -18,7 +18,7 @@
     border-radius: 8px;
     padding: 12px;
     background: var(--gray-500);
-    color: var(--white);
+    color: var(--gray-100);
     border: none;
     outline: none;
 }
@@ -26,4 +26,13 @@
 .btnCreate {
     width: 90px;
     height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }

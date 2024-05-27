@@ -1,0 +1,83 @@
+.task{
+    display: flex;
+    align-items: flex-start;
+    height: 72px;
+    background: var(--gray-600);
+    padding: 18px;
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+    color: var(--gray-100);
+}
+
+.checkBoxContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .checkBoxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkMark {
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    border: 2px solid var(--purple-dark);
+    border-radius: 80px;
+    margin-right: 10px;
+  }
+  
+  .checkBoxContainer:hover input ~ .checkMark {
+    background-color: var(--purple);
+    opacity: 0.5;
+  }
+  
+  .checkBoxContainer input:checked ~ .checkMark {
+    background-color: var(--purple-dark);
+    opacity: 1;
+  }
+  
+  .checkMark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkBoxContainer input:checked ~ .checkMark::after {
+    display: block;
+  }
+  
+  .checkMark::after {
+    left: 5.8px;
+    top: 3px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .checkBoxContainer input:checked ~ .text {
+    text-decoration: line-through;
+  }
+  
+  .text {
+    font-size: 14px;
+  }
+  
+
+.deleteComment{
+    border: none;
+    margin-left: 28px;
+    cursor: pointer;
+    height: auto;
+    background: transparent;
+    color: var(--gray-100);
+}

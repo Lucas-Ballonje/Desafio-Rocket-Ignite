@@ -1,3 +1,42 @@
+.createTask{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -2rem;
+}
+
+.createTask form {
+    display: flex;
+    max-width: 736px;
+    width: 100%;
+    gap: 15px;
+}
+
+.createTask input {
+    width: 634px;
+    height: auto;
+    border-radius: 8px;
+    padding: 12px;
+    background: var(--gray-500);
+    color: var(--gray-100);
+    border: none;
+    outline: none;
+}
+
+.btnCreate {
+    width: 90px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 .tasks {
     display: flex;
     justify-content: center;
@@ -12,7 +51,7 @@
     justify-content: space-between;
 }
 
-.createTask{
+.createdTask{
     font-size: 14px;
     color: var(--blue);
     font-weight: 600;
@@ -47,22 +86,5 @@
     margin: 40px 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 30px;    
-}
-
-.task{
-    display: flex;
-    align-items: flex-start;
-    height: 72px;
-    background: var(--gray-500);
-    padding: 8px 16px;
-    gap: 10px;
-    border: 1px solid var(--gray-400);
-    border-radius: 8px;
-    color: var(--gray-100);
-}
-
-.checkTask{
-    cursor: pointer;
-    border: 2px solid var(--blue);
+    gap: 20px;
 }
